@@ -1,0 +1,16 @@
+-- To install Linux on Windows
+
+1 - wsl --list --online
+2 - wsl --install -d Ubuntu
+
+-- To Remove Linux on Windows
+
+1 - wsl -l
+2 -  wsl --unregister Ubuntu-18.04
+
+-- To install Redis on  Windows Linux
+
+1 - sudo apt-get update
+2 - apt-get install redis
+3 - service redis-server start
+4 - redis-cli

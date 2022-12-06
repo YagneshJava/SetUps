@@ -1,0 +1,36 @@
+git git --version
+
+
+- git config --global user.name "Yagnesh Rana"
+
+- git config --global user.email "yagnesh.rana@topiatech.uk"
+
+- git config --global user.email
+
+- git config --global user.name
+
+- git config --global --edit
+
+create a folder and make it a Git repo with the help of 
+
+- git init
+
+- git status
+
+to add files in staging area we need to use following command
+ staging - files which are in staging area will be committed in the commit command.
+
+- git add . , git add <file name>
+
+- git commit -m "Your Commit msg"
+
+
+- git branch branchname
+
+- git checkout branchname
+
+- git checkout -b branchname - this command will create new branch
+
+- git remote add origin URL
+
+- git push -u origin 

@@ -1,0 +1,7 @@
+Ubuntu - WSL Windows command
+
+
+- sudo apt-get update
+- sudo apt-get install redis 
+- sudo service redis-server start 
+- redis-cli

@@ -1,0 +1,86 @@
+-- MySQL Installation
+
+ -sudo yum install mysql-server
+
+-- To Create user 
+	-create user 'ePharma'@'%' identified by 'Umlup01cli#@6969';
+-- To grant access
+	-grant grant option on *.* to 'ePharma'@'134.122.109.152';
+
+-- To allow access to ports via fire wall
+
+	- firewall-cmd --zone=public --add-port=2888/tcp --permanent
+	- firewall-cmd --reload
+
+Step 1
+
+
+Install java (open JDK): yum install java -y 
+
+
+Step 2
+
+
+Access file :
+chown root /root* -R
+
+
+Step 3
+
+
+Inside OPT directory :     
+cd/opt
+
+
+Step 4
+
+
+Install tomcat :  
+
+wget  https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.54/bin/apache-tomcat-9.0.54.tar.gz
+
+
+Step 5
+
+
+Extract .tar.gz file :          
+
+tar-xvzf  apache-tomcat-9.0.54.tar.gz
+
+
+
+
+Step 6
+
+
+sudo yum install mysql-server
+
+systemctl enable mysqld
+
+systemctl start mysqld
+
+mysql_secure_installation
+
+MySQL connect : 
+
+mysql -u root -p
+
+
+Step 7
+
+
+Create MySQL user: 
+
+CREATE USER 'root'@'%' IDENTIFIED BY  'newpassword';
+
+Step 8 
+
+Give all privileges: 
+
+GRANT ALL PRIVILEGES  ON *.* TO 'root'@'%';
+
+GRANT OPTION OPTION PRIVILEGES  ON *.* TO 'root'@'%';
+
+FLUSH PRIVILEGES;
+
+  

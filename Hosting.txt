@@ -1,0 +1,11 @@
+Steps to host Spring boot jar on Linux:
+
+-- Make symlink of JAR
+sudo ln -s /root/ePharmaRestAPI-0.0.1-SNAPSHOT.jar  /etc/init.d/ePharmaRestAPI-0.0.1-SNAPSHOT
+
+-- To give permission -- 
+chmod u+x /etc/init.d/ePharmaRestAPI-0.0.1-SNAPSHOT
+
+
+-- Start Service -- 
+service ePharmaRestAPI-0.0.1-SNAPSHOT start
